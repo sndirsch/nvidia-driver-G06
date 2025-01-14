@@ -1,3 +1,5 @@
+# some change
+
 #
 # spec file for package nvidia-driver-G06
 #
