@@ -31,7 +31,7 @@
 %endif
 
 Name:           nvidia-driver-G06
-Version:        575.51.02
+Version:        580.76.05
 Release:        0
 License:        SUSE-NonFree
 Summary:        NVIDIA graphics driver kernel module for GeForce 700 series and newer
@@ -69,7 +69,9 @@ BuildRequires:  kernel-syms-azure
 %endif
 %if 0%{?is_opensuse} && 0%{?suse_version} >= 1699
 # build KPMs for kernel-longterm in Factory
+%ifnarch aarch64
 BuildRequires:  kernel-syms-longterm
+%endif
 %endif
 BuildRequires:  %kernel_module_package_buildreqs
 BuildRequires:  module-init-tools

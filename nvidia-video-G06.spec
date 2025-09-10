@@ -21,15 +21,15 @@
 
 # Minimum requirements for driver 560:
 %global version_egl_gbm 1.1.2
-%global version_egl_wayland 1.1.13.1
-%global version_egl_x11 0.1
+%global version_egl_wayland 1.1.20
+%global version_egl_x11 1.0.3
 
 %if %{undefined _firmwaredir}
 %define _firmwaredir /lib/firmware
 %endif
 
 Name:           nvidia-video-G06
-Version:        575.51.02
+Version:        580.76.05
 Release:        0
 License:        SUSE-NonFree
 Summary:        NVIDIA graphics driver for GeForce 700 series and newer
